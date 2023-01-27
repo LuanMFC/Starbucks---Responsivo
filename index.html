@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Titulo da página -->
+    <title>Starbucks</title>
+
+    <!-- Logo na aba da página -->
+    <link rel="icon" href="./imagens/logo.png">
+
+    <!-- Link da folha de estilo -->
+    <link rel="stylesheet" href="./css/style.css">
+
+
+</head>
+<body>
+    
+    <div class="container">
+
+        
+        <header class="header">
+            <img src="./imagens/logo.png" alt="Logo Starbucks" class="navLogoImg">
+
+            <div class="navBtnGroup">
+                <button class="navBtn">Home</button>
+                <button class="navBtn">Menu</button>
+                <button class="navBtn navBtnInvisible">O que há de novo</button>
+                <button class="navBtn">Contato</button>
+
+                <div class="navBtnTheme" onclick="ToglleTheme()" id="Theme">
+                    <img src="./imagens/sun.svg" alt="" id="navBtnToglleSun" name="navBtnToglle">
+                    <img src="./imagens/moon.svg" alt="" id="navBtnToglleMoon" name="navBtnToglle">
+                    <button name="navBtnToglle" id="navBtnName"><span class="nameThemeBtn">Ligth</span></button>
+                </div>
+            </div>
+        </header>
+
+        <section class="content">
+            
+            <div class="mainContent">
+
+                <p class="mainContentTitle">It's not just Coffee <br>
+                    It's <span class="MainContentStarbucks">Starbucks</span>
+                </p>
+
+                <p class="MainContentDescription">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quos nemo a debitis 
+                    expedita maxime fugit dolore amet aliquid obcaecati labore fuga, similique porro ullam perferendis. 
+                    Quas provident nostrum consequatur!
+                </p>
+
+                <button class="MainContentBtn">SAIBA MAIS</button>
+    
+            </div>
+            
+            <div class="milkShakeContent">
+                <img src="./imagens/img1.png" alt="Milk shale Content Verde" class="milkShakeContentImg milkShakeContentImgSelected">
+                <img src="./imagens/img2.png" alt="Milk shale Content Rosa claro" class="milkShakeContentImg">
+                <img src="./imagens/img3.png" alt="Milk shale Content Rosa com Verde" class="milkShakeContentImg">
+            </div>
+
+            <div class="iconsRedesContent">
+                <img src="./imagens/facebookBlack.svg" alt="Logo Fecebook" class="iconsRedesImg">
+                <img src="./imagens/twitter.png" alt="Logo Twitter" class="iconsRedesImg">
+                <img src="./imagens/instagram.png" alt="Logo Instagram" class="iconsRedesImg">
+            </div>
+        </section>
+        
+
+        <footer class="footer">
+            <img src="./imagens/thumb1.png" alt="Milk Shake verde do Footer" class="milkShakeFooterImg milkShakeFooterImg1"  onclick="ToggleMilkShake1()">
+            <img src="./imagens/thumb2.png" alt="Milk Shake rosa claro do Footer" class="milkShakeFooterImg milkShakeFooterImg2" onclick="ToggleMilkShake2()">
+            <img src="./imagens/thumb3.png" alt="Milk Shake rosa com verde do Footer" class="milkShakeFooterImg milkShakeFooterImg3"  onclick="ToggleMilkShake3()">
+        </footer>
+
+    </div>
+
+    
+    <script src="./app.js"></script>
+</body>
+</html>
